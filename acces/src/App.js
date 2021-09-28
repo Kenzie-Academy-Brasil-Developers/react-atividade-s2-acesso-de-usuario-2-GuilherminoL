@@ -6,18 +6,20 @@ import Company from "./pages/company/";
 
 function App() {
   return (
-    <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
+    <div className="App-header">
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
 
-      <Route path="/costumer/:id">
-        <Costumer />
-      </Route>
-      <Route path="/company/:id">
-        <Company />
-      </Route>
-    </Switch>
+        <Route path="/costumer/:id">
+          <Costumer />
+        </Route>
+        <Route path="/company/:id">
+          <Company />
+        </Route>
+      </Switch>
+    </div>
   );
 }
 
